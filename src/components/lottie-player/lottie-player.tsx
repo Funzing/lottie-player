@@ -244,11 +244,10 @@ export class LottiePlayer {
         }
     }
 
-//     @Method()
-//     setLocationHref(href) {
-//        lottiejs.setLocationHref(href)
-//     }
-
+    @Method()
+    async setLocationHref(href) {
+        this._lottie.setLocationHref(href);
+    }
     /**
      * Start playing animation.
      */
