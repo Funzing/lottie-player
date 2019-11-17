@@ -147,6 +147,7 @@ export class LottiePlayer {
                 ...options,
                 [srcAttrib]: srcParsed
             });
+            console.log('this._lottie', this._lottie);
         } catch (err) {
             this.currentState = PlayerState.Error;
             this.error.emit();
