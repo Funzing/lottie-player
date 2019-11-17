@@ -244,10 +244,6 @@ export class LottiePlayer {
         }
     }
 
-    @Method()
-    async setLocationHref(href) {
-        this._lottie.setLocationHref(href);
-    }
     /**
      * Start playing animation.
      */
@@ -361,6 +357,14 @@ export class LottiePlayer {
             return;
         }
         this._lottie.setDirection(value);
+    }
+
+    @Method()
+    async setLocationHref(href) {
+        if (!this._lottie) {
+            return;
+        }
+        this._lottie.setLocationHref(href)
     }
 
     /**
