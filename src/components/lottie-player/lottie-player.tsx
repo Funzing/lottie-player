@@ -246,7 +246,7 @@ export class LottiePlayer {
 
     @Method()
     setLocationHref(href) {
-       this._lottie.setLocationHref(href)
+       lottiejs.setLocationHref(href)
     }
 
     /**
